@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Maestra PMMF</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- MathJax para fórmulas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .formula-box {
+            @apply bg-gray-50 border border-gray-200 rounded-lg p-4 my-2 text-center overflow-x-auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen">
+
+    <!-- Header Principal -->
+    <header class="bg-indigo-700 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">📘 GUÍA MAESTRA PMMF</h1>
+            <p class="mt-2 text-indigo-200 text-lg">Gestión Logística y Comercial: Arquetipos, Fórmulas y Trampas</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 space-y-8">
+
+        <!-- TIPO 1: VERDE -->
+        <section class="bg-white rounded-xl shadow-md overflow-hidden border-l-8 border-green-500 transform transition hover:scale-[1.01] duration-300">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center mb-4">
+                    <span class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mr-3">Básico</span>
+                    <h2 class="text-2xl font-bold text-green-700">🟢 TIPO 1: El Mecánico (Rellenar Huecos)</h2>
+                </div>
+                <p class="text-gray-600 mb-6"><strong>Objetivo:</strong> Despejar incógnitas en una tabla. Comprobar agilidad matemática. <br><strong>Frecuencia:</strong> Alta en ejercicios de repaso.</p>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-bold text-gray-700 mb-3 border-b pb-1">🧮 Fórmulas Imprescindibles</h3>
+                        <ul class="space-y-4">
+                            <li>
+                                <span class="text-sm font-semibold text-gray-500">1. Existencias Medias</span>
+                                <div class="bg-gray-50 p-2 rounded border border-gray-200 text-center">
+                                    $$E_m = \frac{Ei + Ef}{2}$$
+                                </div>
+                            </li>
+                            <li>
+                                <span class="text-sm font-semibold text-gray-500">2. Consumo (MP)</span>
+                                <div class="bg-gray-50 p-2 rounded border border-gray-200 text-center">
+                                    $$Consumo = Ei + Compras - Ef$$
+                                </div>
+                                <p class="text-xs text-orange-600 mt-1">⚠️ ¡Cuidado! A veces debes despejar las Compras.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-4 md:mt-9">
+                             <li>
+                                <span class="text-sm font-semibold text-gray-500">3. Rotación (Veces)</span>
+                                <div class="bg-gray-50 p-2 rounded border border-gray-200 text-center">
+                                    $$Rotación = \frac{\text{Consumo o Coste Ventas}}{\text{Existencias Medias}}$$
+                                </div>
+                            </li>
+                            <li>
+                                <span class="text-sm font-semibold text-gray-500">4. Periodo Medio (Días)</span>
+                                <div class="bg-gray-50 p-2 rounded border border-gray-200 text-center">
+                                    $$PM = \frac{365}{Rotación}$$
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 bg-red-50 border-l-4 border-red-500 p-4">
+                    <h4 class="text-red-700 font-bold flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        💣 La Trampa Habitual: "Ingeniería Inversa"
+                    </h4>
+                    <p class="text-sm text-red-600 mt-1">Te dan los <strong>Días (PMP)</strong> y te piden el <strong>Saldo Medio</strong> o las Compras.</p>
+                    <div class="mt-2 text-center font-bold text-red-800 bg-red-100 p-2 rounded">
+                        $$Saldo Medio = \frac{PMP \times Compras}{365}$$
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIPO 2: AMARILLO -->
+        <section class="bg-white rounded-xl shadow-md overflow-hidden border-l-8 border-yellow-500 transform transition hover:scale-[1.01] duration-300">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center mb-4">
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mr-3">Intermedio</span>
+                    <h2 class="text-2xl font-bold text-yellow-700">🟡 TIPO 2: El Ciclo Completo</h2>
+                </div>
+                <p class="text-gray-600 mb-6"><strong>Objetivo:</strong> Ordenar datos de una empresa industrial o comercial y calcular el PMMF.</p>
+
+                <h3 class="font-bold text-gray-700 mb-3">🏭 Estructura de la Empresa Industrial (4 Fases)</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border border-gray-200 rounded-lg text-sm text-left">
+                        <thead class="bg-gray-50 text-gray-600 font-bold uppercase">
+                            <tr>
+                                <th class="py-3 px-4 border-b">Periodo</th>
+                                <th class="py-3 px-4 border-b">Nombre</th>
+                                <th class="py-3 px-4 border-b text-blue-600">Numerador (Flujo)</th>
+                                <th class="py-3 px-4 border-b text-purple-600">Denominador (Stock)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700 divide-y divide-gray-100">
+                            <tr>
+                                <td class="py-2 px-4 font-bold">PMa</td>
+                                <td class="py-2 px-4">Almacenamiento</td>
+                                <td class="py-2 px-4 bg-blue-50">Compras (o Consumo*)</td>
+                                <td class="py-2 px-4 bg-purple-50">Existencias Medias MP</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 font-bold">PMc</td>
+                                <td class="py-2 px-4">Fabricación</td>
+                                <td class="py-2 px-4 bg-blue-50">Coste Producción</td>
+                                <td class="py-2 px-4 bg-purple-50">Ex. Medias Curso</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 font-bold">PMv</td>
+                                <td class="py-2 px-4">Venta</td>
+                                <td class="py-2 px-4 bg-blue-50">Coste Ventas</td>
+                                <td class="py-2 px-4 bg-purple-50">Ex. Medias Terminados</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 font-bold">PMC</td>
+                                <td class="py-2 px-4">Cobro</td>
+                                <td class="py-2 px-4 bg-blue-50">Ventas (Precio Venta)</td>
+                                <td class="py-2 px-4 bg-purple-50">Saldo Medio Clientes</td>
+                            </tr>
+                            <tr class="bg-red-50 border-t-2 border-red-100">
+                                <td class="py-2 px-4 font-bold text-red-600">PMP</td>
+                                <td class="py-2 px-4 text-red-600">Pago (RESTAR)</td>
+                                <td class="py-2 px-4 font-bold text-red-600">Compras (o Consumo*)</td>
+                                <td class="py-2 px-4 text-red-600">Saldo Medio Proveedores</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-4 p-4 bg-yellow-50 rounded-lg text-sm text-yellow-800 border border-yellow-200">
+                    <strong>⚠️ LA TRAMPA DEL ASTERISCO (*):</strong> En teoría, el PMP usa <em>Compras</em>. Sin embargo, algunos ejercicios académicos usan <em>Consumo de MP</em>. Si con Compras no cuadra, prueba Consumo.
+                </div>
+            </div>
+        </section>
+
+        <!-- TIPO 3: ROJO -->
+        <section class="bg-white rounded-xl shadow-md overflow-hidden border-l-8 border-red-600 transform transition hover:scale-[1.01] duration-300">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center mb-4">
+                    <span class="bg-red-100 text-red-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mr-3">Avanzado</span>
+                    <h2 class="text-2xl font-bold text-red-700">🔴 TIPO 3: El Estratégico 🏆</h2>
+                </div>
+                <p class="text-gray-600 mb-6"><strong>Objetivo:</strong> "¿Cuánto saldo de proveedores necesito para bajar el PMMF en X días?". <br><strong>Importancia:</strong> El ejercicio clave para subir nota.</p>
+
+                <h3 class="font-bold text-gray-800 text-lg mb-4 text-center">🚀 ALGORITMO DE RESOLUCIÓN</h3>
+                
+                <div class="grid md:grid-cols-4 gap-4">
+                    <!-- Paso 1 -->
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 relative">
+                        <div class="absolute -top-3 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">PASO 1</div>
+                        <h4 class="font-bold text-gray-700 mt-2">Objetivo</h4>
+                        <p class="text-xs text-gray-500 mb-2">Calcula la meta.</p>
+                        <div class="text-xs font-mono bg-white p-2 border rounded">
+                           $$PMMF_{Obj} = PMMF_{Act} - \text{Rebaja}$$
+                        </div>
+                    </div>
+
+                    <!-- Paso 2 -->
+                    <div class="bg-blue-50 rounded-lg p-4 border border-blue-200 relative">
+                        <div class="absolute -top-3 left-4 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded">PASO 2</div>
+                        <h4 class="font-bold text-gray-700 mt-2">Congelar ❄️</h4>
+                        <p class="text-xs text-gray-500 mb-2">Si no dicen que mejoramos gestión, los días se mantienen.</p>
+                        <div class="text-xs font-mono bg-white p-2 border rounded">
+                           $$\text{Ciclo} = PMa + PMc + PMv + PMC$$
+                        </div>
+                    </div>
+
+                    <!-- Paso 3 -->
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 relative">
+                        <div class="absolute -top-3 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">PASO 3</div>
+                        <h4 class="font-bold text-gray-700 mt-2">Despejar PMP</h4>
+                        <p class="text-xs text-gray-500 mb-2">¿Cuánto tardar en pagar?</p>
+                        <div class="text-xs font-mono bg-white p-2 border rounded">
+                           $$PMP_{Nec} = \text{Ciclo} - PMMF_{Obj}$$
+                        </div>
+                    </div>
+
+                    <!-- Paso 4 -->
+                    <div class="bg-green-50 rounded-lg p-4 border border-green-200 relative">
+                        <div class="absolute -top-3 left-4 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">PASO 4</div>
+                        <h4 class="font-bold text-gray-700 mt-2">Dinero 💰</h4>
+                        <p class="text-xs text-gray-500 mb-2">Usa las NUEVAS Compras.</p>
+                        <div class="text-xs font-mono bg-white p-2 border rounded">
+                           $$SMP = \frac{PMP_{Nec} \times Compras_{New}}{365}$$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="font-bold text-gray-700 mb-2">✅ Checklist para el Examen</h4>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-center"><input type="checkbox" class="mr-2 h-4 w-4 text-indigo-600"> ¿He distinguido si es comercial (2 fases) o industrial (4 fases)?</li>
+                        <li class="flex items-center"><input type="checkbox" class="mr-2 h-4 w-4 text-indigo-600"> ¿He comprobado si uso 360 o 365 días?</li>
+                        <li class="flex items-center"><input type="checkbox" class="mr-2 h-4 w-4 text-indigo-600"> <strong>Tipo 3:</strong> ¿Apliqué el aumento a las Compras antes del paso final?</li>
+                        <li class="flex items-center"><input type="checkbox" class="mr-2 h-4 w-4 text-indigo-600"> ¿He puesto las unidades? (Días / Euros)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-6 text-center">
+        <p class="text-sm">Generado con IA para el estudio de Gestión Financiera.</p>
+    </footer>
+
+</body>
+</html>
